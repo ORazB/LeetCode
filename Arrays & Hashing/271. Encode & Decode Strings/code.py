@@ -1,5 +1,4 @@
 from typing import List
-import math
 
 # Time Complexity: O(n)
 # Space Complexity: O(n)
