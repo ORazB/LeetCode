@@ -26,6 +26,10 @@ class Solution:
                 left += 1
 
             seen.add(s[right])
+            
+            # Why left + 1?
+            # Because we want to include the character at the right pointer in the length of the substring.
+            # If we don't add 1, we would be excluding the character at the right pointer from the length of the substring.
             res = max(res, right - left + 1)
             right += 1
         return res
