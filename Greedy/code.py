@@ -2,7 +2,6 @@ from typing import List
 
 # Time Complexity: O(N log N)
 # Space Complexity: O(1)
-
 class Solution:
     def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
 

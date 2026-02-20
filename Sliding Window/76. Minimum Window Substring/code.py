@@ -47,9 +47,10 @@ class Solution:
               res = [l, r]
               resLen = (r - l + 1)
             
-            # Shrink window (Why decrement first?)
-            # Decrement first to avoid double counting
+            # Shrink window
             window[s[l]] -= 1
+            
+            # Update have counter if current character is in t and window counter is less than tCount
             if s[l] in tCount and window[s[l]] < tCount[s[l]]:
               have -= 1
             # Update left pointer
