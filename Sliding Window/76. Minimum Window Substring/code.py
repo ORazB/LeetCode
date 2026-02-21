@@ -18,7 +18,7 @@ class Solution:
         tCount = {}
         window = {}
         
-        # Initialize Result (Indicies) and Length
+        # Initialize Result Indicies and Length
         res, resLen = [-1, -1], float("infinity")
         
         # Count frequencies of characters in t
