@@ -19,4 +19,4 @@ class Solution:
         if high % 2 == 0:
             high = high - 1
         
-        return  (high - low) // 2 + 1
+        return  (high - low) // 2 + 1 

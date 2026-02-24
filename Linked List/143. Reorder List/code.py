@@ -29,9 +29,9 @@ class Solution:
             temp = curr.next
             # point curr.next to prev
             curr.next = prev
-            # update prev to be curr
+            # update prev to be changed curr
             prev = curr
-            # update curr to be the next node
+            # update curr to be the saved next node
             curr = temp
             
         # Re order
@@ -39,11 +39,16 @@ class Solution:
         second = prev
         
         while second:
+            # Save the first and second half next
             temp1 = first.next
             temp2 = second.next
             
+            # Change first's next to second
             first.next = second
+            # Change second's next to temp1
             second.next = temp1
             
+            # Advance first
             first = temp1
+            # Advance second
             second = temp2
