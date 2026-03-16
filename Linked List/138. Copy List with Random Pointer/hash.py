@@ -17,10 +17,13 @@ class Solution:
         # Hash Method
         temp = {}
         curr = head
+
+        # Copy the Values
         while curr:
             temp[curr] = Node(curr.val)
             curr = curr.next
 
+        # Copy the Random Pointers
         curr = head
         while curr:
             temp[curr].next = temp.get(curr.next)
