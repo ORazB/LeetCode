@@ -21,14 +21,14 @@ class LRUCache:
         nxt.prev = prev
 
     def insert(self, node):
-        prev, nxt = self.latest.prev, self.latest
+        prev, nxt = self.latest.prev, self.tail
         prev.next = nxt
-        next.prev = prev
+        nxt.prev = prev
 
     def get(self, key: int) -> int:
         if key not in self.cache:
             return -1
-        self.latest = Node(self.cache[key], self.cache[key].val)
+        self.tail = Node(self.cache[key], self.cache[key].val)
         return self.cache[key].val
 
     def put(self, key: int, value: int) -> None:
