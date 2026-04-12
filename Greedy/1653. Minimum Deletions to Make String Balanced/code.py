@@ -12,4 +12,4 @@ class Solution:
             else:
                 # Decide which one is cheaper to delete "a" or "b"
                 deletions = min(deletions + 1, count)
-        return deletions
+        return deletion
